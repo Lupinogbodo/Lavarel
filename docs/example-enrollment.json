@@ -1,0 +1,100 @@
+{
+  "student": {
+    "email": "john.doe@example.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone": "+1-555-123-4567",
+    "date_of_birth": "1995-03-15",
+    "address": {
+      "street": "123 Main Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "US",
+      "postal_code": "94102"
+    },
+    "preferences": {
+      "language": "en",
+      "timezone": "America/Los_Angeles",
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": true
+      }
+    }
+  },
+  "course": {
+    "code": "WEB-301",
+    "custom_fields": [
+      {
+        "key": "referral_source",
+        "value": "linkedin_ad"
+      },
+      {
+        "key": "company_name",
+        "value": "Tech Corp Inc"
+      }
+    ]
+  },
+  "payment": {
+    "amount": 299.00,
+    "currency": "USD",
+    "method": "credit_card",
+    "coupon_code": "SUMMER2024",
+    "card": {
+      "number": "4242424242424242",
+      "holder_name": "John Doe",
+      "expiry_month": 12,
+      "expiry_year": 2026,
+      "cvv": "123"
+    },
+    "billing_address": {
+      "same_as_student": false,
+      "street": "456 Business Ave",
+      "city": "San Francisco",
+      "country": "US",
+      "postal_code": "94103"
+    }
+  },
+  "enrollment": {
+    "start_immediately": true,
+    "send_welcome_email": true,
+    "grant_certificate": true,
+    "notes": "Corporate training enrollment",
+    "modules": [
+      {
+        "module_id": 1,
+        "unlock_immediately": true,
+        "lessons": [
+          {
+            "lesson_id": 1,
+            "is_mandatory": true
+          },
+          {
+            "lesson_id": 2,
+            "is_mandatory": true
+          }
+        ]
+      },
+      {
+        "module_id": 2,
+        "unlock_immediately": false,
+        "unlock_date": "2024-03-01",
+        "lessons": [
+          {
+            "lesson_id": 3,
+            "is_mandatory": false
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "source": "web",
+    "referrer": "https://google.com",
+    "utm_campaign": "summer_courses",
+    "utm_medium": "social",
+    "utm_source": "linkedin",
+    "ip_address": "192.168.1.1",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  }
+}
